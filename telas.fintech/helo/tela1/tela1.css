@@ -1,0 +1,119 @@
+body {
+    font-family: "Playwrite DE Grund", cursive;
+    background-color: #b3ff9c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #f4fff2;
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.container h2 {
+    font-family: "Roboto Slab", serif;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+    color: #4caf50;
+}
+
+.header h3 {
+    width: 300px;
+    margin: 5px 0 0 0;
+    font-weight: 400;
+    color: #4caf50;
+    background-color: #e9f7e5;
+    border-radius: 20px;
+}
+
+.header p {
+    width: 300px;
+    margin: 5px 0 0 0;
+    color: #4caf50;
+    background-color: #e9f7e5;
+    border-radius: 20px;
+    
+}
+
+.investments table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.investments th {
+    font-family: "Roboto Slab", serif;
+    color: #4caf50;
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.investments td {
+    width: 100px;
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.investments td:hover {
+    background-color: #d3ffcb9d;
+    color: #196d0b9c;
+}
+
+.new-investment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.new-investment input {
+    width: calc(100% - 40px);
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.new-investment button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-investment button:hover {
+    background-color: #45a049;
+}
+
+.add-button {
+    background-color: #ecdc49;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 25px);
+    font-size: 24px;
+}
+
+.add-button:hover {
+    background-color: #ffc107;
+}

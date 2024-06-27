@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recebimentos</title>
+    <link rel="stylesheet" href="tela2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Recebimentos</h2>
+        </div>
+        <div class="bank-totals">
+            <div class="bank">
+                <p>Banco Itaú</p>
+                <p>R$ <span id="itau-total">2.420,00</span></p>
+            </div>
+            <div class="bank">
+                <p>Banco Inter</p>
+                <p>R$ <span id="inter-total">450,00</span></p>
+            </div>
+        </div>
+        <div class="recebimentos">
+            <h3>Esse mês</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>TÍTULO</th>
+                        <th>VALOR</th>
+                        <th>DATA</th>
+                    </tr>
+                </thead>
+                <tbody id="recebimento-list">
+                    <tr>
+                        <td>salário</td>
+                        <td>R$ 2.400,00</td>
+                        <td>05/04</td>
+                    </tr>
+                    <tr>
+                        <td>transferência</td>
+                        <td>R$ 100,00</td>
+                        <td>10/04</td>
+                    </tr>
+                    <tr>
+                        <td>free lance</td>
+                        <td>R$ 250,00</td>
+                        <td>12/04</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="new-recebimento">
+            <input type="text" id="new-recebimento-value" placeholder="Adicionar Novo Valor de Recebimento">
+            <button onclick="addRecebimento()">✔</button>
+        </div>
+        <button class="add-button" onclick="scrollToNewRecebimento()">+</button>
+    </div>
+    <script src="tela2.js"></script>
+</body>
+</html>

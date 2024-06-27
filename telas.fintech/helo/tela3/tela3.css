@@ -1,0 +1,116 @@
+body {
+    font-family: "Playwrite DE Grund", cursive;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #b3ff9c;
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+    color: #4caf50;
+}
+
+.despesas {
+    width: 80%;
+    height: 80%;
+    margin-bottom: 20px;
+}
+
+.despesa-group {
+    background-color: #fbfffb;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.despesa-group h3 {
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+    color: #4caf50;
+}
+
+.despesa-group table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.despesa-group td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.despesa-group td:hover {
+    background-color: #dfffd5a8;
+    color: #2d662f;
+}
+
+.despesa-group th {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-weight: 600;
+    font-size: small;
+    color: #2d662f;
+}
+
+.new-despesa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.new-despesa input {
+    width: calc(100% - 40px);
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.new-despesa button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-despesa button:hover {
+    background-color: #45a049;
+}
+
+.add-button {
+    background-color: #ffeb3b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 25px);
+    font-size: 24px;
+}
+
+.add-button:hover {
+    background-color: #ffc107;
+}

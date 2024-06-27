@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despesas</title>
+    <link rel="stylesheet" href="tela3.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Despesas</h2>
+        </div>
+        <div class="despesas">
+            <div class="despesa-group">
+                <h3>Fixas</h3>
+                <table>
+                    <tbody id="fixas-list">
+                        <tr>
+                            <th> Descrição</th>
+                            <th> Valor</th>
+                        </tr>
+                        <tr>
+                            <td>Academia</td>
+                            <td>R$ 99,90</td>
+                        </tr>
+                        <tr>
+                            <td>Internet</td>
+                            <td>R$ 120,00</td>
+                        </tr>
+                        <tr>
+                            <td>Spotify</td>
+                            <td>R$ 19,90</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="despesa-group">
+                <h3>Variáveis</h3>
+                <table>
+                    <tbody id="variaveis-list">
+                        <tr>
+                            <th>Descrição</th>
+                            <th>Valor</th>
+                        </tr>
+                        <tr>
+                            <td>Ifood</td>
+                            <td>R$ 50,00</td>
+                        </tr>
+                        <tr>
+                            <td>Uber</td>
+                            <td>R$ 8,00</td>
+                        </tr>
+                        <tr>
+                            <td>Festa</td>
+                            <td>R$ 80,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="new-despesa">
+            <input type="text" id="new-despesa-value" placeholder="Adicionar nova despesa">
+            <button onclick="addDespesa()">+</button>
+        </div>
+        <button class="add-button" onclick="scrollToNewDespesa()">+</button>
+    </div>
+    <script src="tela3.js"></script>
+</body>
+</html>
